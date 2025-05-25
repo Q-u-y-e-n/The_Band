@@ -1,0 +1,253 @@
+:root {
+    --primary-color: RGB(0, 0, 0);
+    --white-color: RGB(255, 255, 255);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* cách chia như này gọi là HACK */
+    font-size: 62.5%;
+    /* font-size: 62.5% thì 1rem = 10px */
+    /* vậy 1.2rem == 12px và 1.6rem == 16px */
+    /* mặc định font-size: 100% sẽ bằng 16px*/
+
+    line-height: 1.6rem;
+    /* xét độ cao mặc định của dòng là 16px */
+    font-family: 'Roboto', sans-serif;
+    /* sans-serif: tập hợp những chủng k có chân 
+    khi fonts Roboto bị lỗi thì nó sẽ sử dụng sans-serif*/
+    box-sizing: border-box;
+    /* xét box-sizing cho thẻ html, tức là các thẻ trong file sẽ kế thừa thẻ này */
+
+}
+
+/* Reponssive */
+.grid {
+
+    max-width: 100%;
+    /*
+    -- xét 2 thuộc tính này vì khi màn hình lớn hơn 1200px thì 
+    kích thước tối đa của grid chỉ là 1200px
+    -- còn nếu màn hình có kích thước nhỏ hơn 1200px thì
+    kích thước của grid sẽ chiếm 100% màn hình trình duyệt */
+    margin: 0 auto;
+    /* tự động căn giữa khối này khi nó nằm trong 1 khối khác */
+
+
+}
+
+/* sử dụng trong trường hợp bạn k muốn sử dụng width = 1200px thì sẽ sử dụng class này để css lại */
+.grid__full-width {
+    width: 100%;
+}
+
+/* những thẻ nằm trong class này sẽ nằm ngang và khi độ dài của những item con mà vượt quá độ dàu của grid này thì nó sẽ tự động xuống dòng  */
+.grid__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+/* Test nhé */
+
+.grid__column-2 {
+    width: 16.66666667%;
+
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.grid__column-10 {
+    width: 83.33333333%;
+
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.grid__column-2-4 {
+    width: 20%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.grid_coloumnn-6 {
+    width: 50%;
+
+
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.body-item {
+    text-align: center;
+    max-width: 800px;
+    margin: 100px auto;
+
+    font-size: 1.4rem;
+
+}
+
+/* modal tickets */
+
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+
+}
+
+.modal-ticket {
+
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 20%;
+    width: 60%;
+
+    /* có thể sử dụng
+    display: flex ;
+    justify-content: center;
+    align-items: center;*/
+
+
+}
+
+.modal-container__ticket-header-icons {
+    padding: 2px 5px;
+}
+
+.modal-header {
+    background-color: rgb(7, 136, 121);
+    color: white;
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.modal-tickets_icon-close {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.modal-tickets_icon-close:hover {
+    opacity: 0.8;
+}
+
+.modal-container__ticket-header {
+    padding: 30px 0px;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+
+
+}
+
+.modal-tickets_icon-close {
+    float: right;
+}
+
+.modal-container__tickets-body {
+    background-color: white;
+    color: black;
+    font-size: 1.4rem;
+    padding: 10px;
+}
+
+.modal-container__tickets-body-item {}
+
+.modal-container__tickets-body-item-label {
+    display: block;
+    margin: 10px 0
+}
+
+.modal-container__tickets-body-item-input {
+    width: 100%;
+    padding: 10px 10px;
+    border: 1px solid #cccc;
+    border-radius: 2px;
+
+}
+
+.modal-container__tickets-body-item-padding {
+    padding-top: 15px;
+}
+
+.modal-container__tickets-body-item-link {
+    display: block;
+    text-decoration: none;
+    background-color: white;
+
+}
+
+.modal-container__tickets-body-item-link-button {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    background-color: rgb(7, 136, 121);
+    color: white;
+    font-size: 1.2rem;
+    margin: 15px 0 20px 0;
+    border-style: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 2px;
+    ;
+}
+
+.modal-footer {
+    background-color: white;
+    font-size: 1.4rem;
+    padding: 0 10px 10px 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.modal-footer__link-button {
+    background-color: rgb(236, 54, 13);
+    color: white;
+    border-style: none;
+    padding: 10px;
+    line-height: 10px;
+    border-radius: 2px;
+}
+
+.modal-footer_link {
+    text-decoration: none;
+}
+
+.modal-footer__link-need--link {
+    text-decoration: none;
+    color: black;
+}
+
+.modal-footer__link-help--link {
+    color: rgb(2, 170, 199);
+}
+
+.body-item__tour-box-item-button:active .modal {
+    display: block;
+}
+
+.body-item__tour-box-item-link:active .modal {
+    display: block;
+}

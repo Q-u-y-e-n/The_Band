@@ -23,6 +23,7 @@ html {
     khi fonts Roboto bị lỗi thì nó sẽ sử dụng sans-serif*/
     box-sizing: border-box;
     /* xét box-sizing cho thẻ html, tức là các thẻ trong file sẽ kế thừa thẻ này */
+    scroll-behavior: smooth;
 
 }
 
@@ -92,12 +93,24 @@ html {
     }
 }
 
+@keyframes modalFaceIn {
+    from {
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 .body-item {
     text-align: center;
     max-width: 800px;
     margin: 100px auto;
-
     font-size: 1.4rem;
+    padding: 0 32px;
 
 }
 
@@ -111,7 +124,13 @@ html {
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.4);
     display: none;
+    animation: modalFaceIn ease 0.4s;
 
+}
+
+.modal-tickets_icon-close:hover {
+    background-color: antiquewhite;
+    color: black;
 }
 
 .modal-ticket {
@@ -145,6 +164,7 @@ html {
 .modal-tickets_icon-close {
     font-size: 1.2rem;
     cursor: pointer;
+    padding: 5px;
 }
 
 .modal-tickets_icon-close:hover {
@@ -204,7 +224,7 @@ html {
     padding: 15px 0;
     background-color: rgb(7, 136, 121);
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     margin: 15px 0 20px 0;
     border-style: none;
     text-transform: uppercase;
@@ -249,5 +269,255 @@ html {
 }
 
 .body-item__tour-box-item-link:active .modal {
+    display: block;
+}
+
+
+/* Responsive */
+
+/* 
+PC:  >= 1024px
+Tablet: >= 740px & ,  < 1024px
+Mobile: < 740px
+ */
+
+.pc,
+.tablet,
+.mobile {
+    /* font-size: 68px; */
+    display: none;
+}
+
+/* responsive cho tablet */
+/* độ rộng tối đa là 800px */
+/* nhỏ hơn hoặc bằng 800px thì chạy */
+@media (max-width: 800px) {}
+
+/* độ rộng ít nhất là 800px */
+/* lớn hơn hoặc bằng 800px thì chạy */
+@media (min-width: 800px) {}
+
+/* thực hành reponsive - test nhỏ */
+
+/* BREAK POINT */
+/* Điểm chuyển từ pc về tablet
+và từ tablet về mobile */
+
+/* 1024px */
+@media (min-width: 64em) {
+    .pc {
+        display: block;
+    }
+
+    .header-item__navbar-link-item-icon-list {
+        display: none;
+
+
+    }
+
+}
+
+
+/* 740 to 1023 */
+@media (min-width: 46.25em) and (max-width: 63.9375em) {
+    .body-item__tour-box-item {
+        width: 220px
+    }
+
+    .header-item__navbar-link-item-icon-list {
+        display: none;
+    }
+
+
+
+    .header-item__navbar-link-item-a {
+        padding: 16px 25px;
+    }
+
+    .body-item__tour-box-item-button {
+        padding: 15px 18px;
+    }
+
+    .body-contact__button,
+    .body-contact__detail-input-general {
+        padding: 16px;
+    }
+
+    .body-item__tour-date-detail {
+        padding: 11px 15px;
+    }
+
+    .body-contact__detail-input {
+        width: 50%;
+
+    }
+
+    .body-contact__detail {
+        padding: 12px 0;
+    }
+
+    .body-item__footer-link {
+        font-size: 4rem;
+
+    }
+
+    .body-footer__text {
+        font-size: 2.6rem;
+        margin: 32px;
+    }
+
+    .body-footer a {
+        margin: 0 10px
+    }
+
+}
+
+/* 739px */
+@media(max-width:46.1875em) {
+    .body-item__tour-box-item {
+        width: 100%;
+
+
+    }
+
+    .body-item__tour-date-detail {
+        padding: 11px 15px;
+    }
+
+
+    .body-contact__detail-input-general {
+        padding: 15px
+    }
+
+    .header-item__navbar-icon-mobile {
+        font-size: 2rem !important;
+    }
+
+    .header-item__navbar-link-item-a {
+        padding: 16px 25px;
+    }
+
+    .body-footer a {
+        margin: 0 2px
+    }
+
+    .body-footer__text {
+        font-size: 2.2rem;
+        margin: 32px;
+    }
+
+
+    .header-item__navbar-link-item-a-icon {
+        display: none;
+    }
+
+    .header-item__navbar-link-item-icon-list {
+        position: absolute;
+        top: 20px
+    }
+
+    .header-item__navbar-link-item:hover {
+        opacity: 0.9;
+        display: block;
+    }
+
+
+
+    .header-item__navbar-link-item {
+        display: block;
+
+    }
+
+
+
+    .header-item__navbar-icon-search {
+        display: none
+    }
+
+    .body-item__member {
+        width: 300px;
+    }
+
+
+
+    .header-item__navbar-link-item-mobile {
+        display: none;
+        /* display: block; */
+
+    }
+
+    .header-item__navbar-link {
+        display: block;
+    }
+
+    .header-item__navbar-link-item-icon-list {
+        display: flex;
+        position: fixed;
+        top: 13px;
+        right: 20px;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .header-item__navbar-link-item-a {
+        width: 200px;
+    }
+
+    .header-item__navbar-link-item-more {
+        position: initial !important;
+    }
+
+    .navbar-item__link-list {
+
+        width: 100%;
+        position: absolute;
+        left: 0;
+        background-color: var(--primary-color);
+
+
+    }
+
+
+    .navbar-item__link-list-option-a {
+        color: white;
+    }
+
+    .navbar-item__link-list-option {
+        padding: 5px 20px;
+
+
+
+    }
+
+    .body-contact__button {
+        width: 100%;
+        padding: 16px;
+        font-size: 1.6rem;
+    }
+
+    .body-item__tour-box-item-button {
+        width: 100%;
+        padding: 18px 15px;
+    }
+
+    .body-footer__text {
+        font-size: 2.2rem;
+        margin: 32px;
+    }
+
+
+
+}
+
+
+.header-item__navbar-icon-mobile {
+    color: white;
+    font-size: 1.4rem;
+}
+
+.open {
     display: block;
 }

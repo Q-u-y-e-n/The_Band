@@ -3,35 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="icon" href="./assets/hinhanh/icon.png" type="image/x-icon" />
+    <title>The Band</title>
+
     <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.7.2-web/css/all.min.css">
     <!-- link fontsawesome -->
 
     <link rel="stylesheet" href="./assets/fonts/themify-icons-font/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="./assets/CSS/main.css">
     <link rel="stylesheet" href="./assets/CSS/base.css">
+
 </head>
 
 <body>
     <div class="wrapper">
-        <header class="header">
+        <header id="header">
             <div class="navbar">
                 <div class="navbar-item">
                     <ul class="header-item__navbar-link">
+
                         <li class="header-item__navbar-link-item">
                             <a href="#" class="header-item__navbar-link-item-a">HOME</a>
                         </li>
-                        <li class="header-item__navbar-link-item">
-                            <a href="#" class="header-item__navbar-link-item-a">BAND</a>
+
+                        <li class="header-item__navbar-link-item header-item__navbar-link-item-mobile ">
+                            <a href="#band" class="header-item__navbar-link-item-a">BAND</a>
                         </li>
-                        <li class="header-item__navbar-link-item">
-                            <a href="#" class="header-item__navbar-link-item-a">TOUR</a>
+                        <li class="header-item__navbar-link-item header-item__navbar-link-item-mobile ">
+                            <a href="#tour" class="header-item__navbar-link-item-a">TOUR</a>
                         </li>
-                        <li class="header-item__navbar-link-item">
-                            <a href="#" class="header-item__navbar-link-item-a">CONTACT</a>
+                        <li class="header-item__navbar-link-item header-item__navbar-link-item-mobile">
+                            <a href="#contact" class="header-item__navbar-link-item-a">CONTACT</a>
                         </li>
-                        <li class="header-item__navbar-link-item header-item__navbar-link-item-more">
-                            <a href="#" class="header-item__navbar-link-item-a">MORE</a>
+                        <li
+                            class="header-item__navbar-link-item header-item__navbar-link-item-mobile  header-item__navbar-link-item-more">
+                            <a href="#" class="header-item__navbar-link-item-a ">MORE</a>
                             <i class="header-item__navbar-link-item-a-icon fa-solid fa-caret-down"></i>
                             <ul class="navbar-item__link-list">
                                 <li class="navbar-item__link-list-option">
@@ -47,185 +53,206 @@
                         </li>
                     </ul>
                 </div>
-                <div class="navbar-item header-item__navbar-icon-hover">
+                <div id="mobile-menu" class="header-item__navbar-link-item header-item__navbar-link-item-icon-list">
+                    <i class="header-item__navbar-icon-mobile ti-align-justify"></i>
+                </div>
+                <div class="navbar-item header-item__navbar-icon-hover ">
                     <i class="header-item__navbar-icon-search fa-solid fa-magnifying-glass"></i>
                 </div>
+
             </div>
 
         </header>
         <div class="banner">
             <!-- <img src="./assets/hinhanh/banner.png" alt="" class="banner-img"> -->
-            <h2 class="banner-img__text">Los Angerles</h2>
-            <p class=" banner-img__text-description"><i>hé lô cả nhà iu của kem</i></p>
+            <div class="banner-text">
+                <h2 class="banner-img__text">Los Angerles</h2>
+
+                <p> <i>hé lô cả nhà iu của kem</i></p>
+            </div>
+
         </div>
 
         <body class="body">
-            <div class="body-item">
-                <h3 class="body_header">
-                    THE BAND
-                </h3>
-                <p class=" body__header-note"><i>We love music</i></p>
-                <p class="body__header-text">
-                    We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                    mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                    labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                    laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-
-                <div class=" body-item__member-list">
-                    <div class="body-item__member">
-                        <p class="body-item__member-name">Nguyễn Văn A</p>
-                        <div class="body-item__member-img"></div>
-                    </div>
-                    <div class="body-item__member">
-                        <p class="body-item__member-name">Nguyễn Văn B</p>
-                        <div class="body-item__member-img"></div>
-                    </div>
-                    <div class="body-item__member">
-                        <p class="body-item__member-name">Nguyễn Văn C</p>
-                        <div class="body-item__member-img"></div>
-                    </div>
-                </div>
-            </div>
-            <div class="body-item__tour">
-                <div class="body-item body-item__tour-background">
-                    <h3 class="body_header body-item__tour-header-color">
-                        TOUR DATES
+            <div id="band" class="body-band">
+                <div class="body-item">
+                    <h3 class="body_header">
+                        THE BAND
                     </h3>
-                    <p class=" body__header-note body-item__tour-note "><i>Remember to book your tickets!</i></p>
-                    <ul class="body-item__tour-date">
-                        <li class="body-item__tour-date-detail">
-                            <p class="body-item__tour-date-month-9">September</p>
-                            <span class="body-item__tour-date-label">Sold out</span>
-                        </li>
-                        <li class="body-item__tour-date-detail">
-                            <p class="body-item__tour-date-month-10">October</p>
-                            <span class="body-item__tour-date-label">Sold out</span>
-                        </li>
+                    <p class=" body__header-note"><i>We love music</i></p>
+                    <p class="body__header-text">
+                        We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                        aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                        mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
 
-                        <li class="body-item__tour-date-detail">
-                            <p class="body-item__tour-date-month-11">November</p>
-                            <span class="body-item__tour-date-label-ticket">3</span>
-                        </li>
-                    </ul>
-                    <div class="body-item__tour-box">
-                        <div class="body-item__tour-box-item">
-                            <img src="./assets/hinhanh/newyork.jpg" alt="" class="body-item__tour-box-item-img">
-                            <div class="body-item__tour-box-item-content">
-                                <h3 class="body-item__tour-box-item-header">New York</h3>
-                                <p class="body-item__tour-box-item-date">Fri 27 Nov 2016</p>
-
-                                <p class="body-item__tour-box-item-text">
-                                    Praesent tincidunt sed tellus ut rutrum sed vitae justo. </p>
-
-                                <a class="body-item__tour-box-item-link" href="">
-                                    <button class="body-item__tour-box-item-button"> Buy Tickets</button>
-                                </a>
-                            </div>
+                    <div class=" body-item__member-list">
+                        <div class="body-item__member">
+                            <p class="body-item__member-name">Nguyễn Văn A</p>
+                            <div class="body-item__member-img"></div>
                         </div>
-                        <div class="body-item__tour-box-item">
-                            <img src="./assets/hinhanh/paris.jpg" alt="" class="body-item__tour-box-item-img">
-                            <div class="body-item__tour-box-item-content">
-                                <h3 class="body-item__tour-box-item-header">New York</h3>
-                                <p class="body-item__tour-box-item-date">Fri 27 Nov 2016</p>
-
-                                <p class="body-item__tour-box-item-text">
-                                    Praesent tincidunt sed tellus ut rutrum sed vitae justo. </p>
-
-                                <a class="body-item__tour-box-item-link" href="">
-
-
-                                    <button class="body-item__tour-box-item-button"> Buy Tickets</button>
-                                </a>
-                            </div>
+                        <div class="body-item__member">
+                            <p class="body-item__member-name">Nguyễn Văn B</p>
+                            <div class="body-item__member-img"></div>
                         </div>
-                        <div class="body-item__tour-box-item">
-                            <img src="./assets/hinhanh/sanfran.jpg" alt="" class="body-item__tour-box-item-img">
-                            <div class="body-item__tour-box-item-content">
-                                <h3 class="body-item__tour-box-item-header">New York</h3>
-                                <p class="body-item__tour-box-item-date">Fri 27 Nov 2016</p>
-
-                                <p class="body-item__tour-box-item-text">
-                                    Praesent tincidunt sed tellus ut rutrum sed vitae justo. </p>
-
-                                <!-- <a class="body-item__tour-box-item-link" href=""> -->
-                                <button class="body-item__tour-box-item-button"> Buy Tickets</button>
-                                <!-- </a> -->
-                            </div>
+                        <div class="body-item__member">
+                            <p class="body-item__member-name">Nguyễn Văn C</p>
+                            <div class="body-item__member-img"></div>
                         </div>
                     </div>
                 </div>
+                <div id="tour" class="body-item__tour">
+                    <div class="body-item body-item__tour-background">
+                        <h3 class="body_header body-item__tour-header-color">
+                            TOUR DATES
+                        </h3>
+                        <p class=" body__header-note body-item__tour-note "><i>Remember to book your tickets!</i></p>
+                        <ul class="body-item__tour-date">
+                            <li class="body-item__tour-date-detail">
+                                <p class="body-item__tour-date-month-9">September</p>
+                                <span class="body-item__tour-date-label">Sold out</span>
+                            </li>
+                            <li class="body-item__tour-date-detail">
+                                <p class="body-item__tour-date-month-10">October</p>
+                                <span class="body-item__tour-date-label">Sold out</span>
+                            </li>
 
-            </div>
-            <div class="body-item body-contac">
-                <h3 class="body_header">
-                    CONTACT
-                </h3>
-                <p class=" body__header-note"><i>Fan? Drop a note!</i></p>
-                <div class="body-contact__container">
-                    <div class="body-contact__detail-container">
-                        <div class="body-contact__detail">
+                            <li class="body-item__tour-date-detail">
+                                <p class="body-item__tour-date-month-11">November</p>
+                                <span class="body-item__tour-date-label-ticket">3</span>
+                            </li>
+                        </ul>
+                        <div class="body-item__tour-box">
+                            <div class="body-item__tour-box-item">
+                                <img src="./assets/hinhanh/newyork.jpg" alt="" class="body-item__tour-box-item-img">
+                                <div class="body-item__tour-box-item-content">
+                                    <h3 class="body-item__tour-box-item-header">New York</h3>
+                                    <p class="body-item__tour-box-item-date">Fri 27 Nov 2016</p>
 
-                            <i class="body-contact__detail-icon-2 ti-location-pin"></i>
-                            <p class="body-contact__detail-place">Chicago, US</p>
-                        </div>
-                        <div class="body-contact__detail">
-                            <i class="body-contact__detail-icon-2 ti-headphone-alt"></i>
-                            <p class="body-contact__detail-place">Phone: +00 151515</p>
-                        </div>
-                        <div class="body-contact__detail">
-                            <i class="body-contact__detail-icon-2 ti-email"></i>
-                            <p class="body-contact__detail-place">Email: email@gmail.com</p>
+                                    <p class="body-item__tour-box-item-text">
+                                        Praesent tincidunt sed tellus ut rutrum sed vitae justo. </p>
+
+                                    <!-- <a class="body-item__tour-box-item-link" href=""> -->
+                                    <button class="js-buy-ticket body-item__tour-box-item-button"> Buy
+                                        Tickets</button>
+                                    <!-- </a> -->
+                                </div>
+                            </div>
+                            <div class="body-item__tour-box-item">
+                                <img src="./assets/hinhanh/paris.jpg" alt="" class="body-item__tour-box-item-img">
+                                <div class="body-item__tour-box-item-content">
+                                    <h3 class="body-item__tour-box-item-header">New York</h3>
+                                    <p class="body-item__tour-box-item-date">Fri 27 Nov 2016</p>
+
+                                    <p class="body-item__tour-box-item-text">
+                                        Praesent tincidunt sed tellus ut rutrum sed vitae justo. </p>
+
+                                    <!-- <a class="body-item__tour-box-item-link" href=""> -->
+
+
+                                    <button class="js-buy-ticket body-item__tour-box-item-button"> Buy
+                                        Tickets</button>
+                                    <!-- </a> -->
+                                </div>
+                            </div>
+                            <div class="body-item__tour-box-item">
+                                <img src="./assets/hinhanh/sanfran.jpg" alt="" class="body-item__tour-box-item-img">
+                                <div class="body-item__tour-box-item-content">
+                                    <h3 class="body-item__tour-box-item-header">New York</h3>
+                                    <p class="body-item__tour-box-item-date">Fri 27 Nov 2016</p>
+
+                                    <p class="body-item__tour-box-item-text">
+                                        Praesent tincidunt sed tellus ut rutrum sed vitae justo. </p>
+
+                                    <!-- <a class="body-item__tour-box-item-link" href=""> -->
+                                    <button class="js-buy-ticket body-item__tour-box-item-button"> Buy Tickets</button>
+                                    <!-- </a> -->
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="body-contact__detail-input">
-                        <div class="body-contact__detail-input-1">
-                            <input required type="text"
-                                class="body-contact__detail-input-general body-contact__detail-input-name"
-                                placeholder="Name">
-                            <input required type="text"
-                                class="body-contact__detail-input-general body-contact__detail-input-email"
-                                placeholder="Email">
-                        </div>
-                        <input type="text" required
-                            class="body-contact__detail-input-general body-contact__detail-input-message"
-                            placeholder="Message">
 
+                </div>
+                <div id="contact" class="body-contact">
+                    <div class="body-item">
+                        <h3 class="body_header">
+                            CONTACT
+                        </h3>
+                        <p class=" body__header-note"><i>Fan? Drop a note!</i></p>
+                        <div class="body-contact__container">
+                            <div class="body-contact__detail-container">
+                                <div class="body-contact__detail">
+
+                                    <i class="body-contact__detail-icon-2 ti-location-pin"></i>
+                                    <p class="body-contact__detail-place">Chicago, US</p>
+                                </div>
+                                <div class="body-contact__detail">
+                                    <i class="body-contact__detail-icon-2 ti-headphone-alt"></i>
+                                    <p class="body-contact__detail-place">Phone: <a href="tel:+00 151515">+00 151515</a>
+                                    </p>
+                                </div>
+                                <div class="body-contact__detail">
+                                    <i class="body-contact__detail-icon-2 ti-email"></i>
+                                    <p class="body-contact__detail-place"> Email: <a href="mailto:email@gmail.com">
+                                            email@gmail.com</a></p>
+                                </div>
+                            </div>
+                            <div class="body-contact__detail-input">
+                                <div class="body-contact__detail-input-1">
+                                    <input required type="text"
+                                        class="body-contact__detail-input-general body-contact__detail-input-name"
+                                        placeholder="Name">
+                                    <input required type="text"
+                                        class="body-contact__detail-input-general body-contact__detail-input-email"
+                                        placeholder="Email">
+                                </div>
+                                <input type="text" required
+                                    class="body-contact__detail-input-general body-contact__detail-input-message"
+                                    placeholder="Message">
+
+                            </div>
+
+                        </div>
+                        <div class="body-contact__button-link" href="">
+                            <button type="submit" value="send" class="body-contact__button">Send</button>
+                        </div>
                     </div>
 
-                </div>
-                <div class="body-contact__button-link" href="">
-                    <button type="submit" value="send" class="body-contact__button">Send</button>
-                </div>
 
-
-            </div>
-            <div class="body-img">
-                <img src="./assets/hinhanh/map.jpg" alt="" class="body-img_img">
-            </div>
-            <div class="body-item ">
-                <div class="body-footer">
-                    <i class="ti-facebook"></i>
-                    <i class="ti-instagram"></i>
-                    <i class="ti-twitter-alt"></i>
-                    <i class="ti-pinterest"></i>
-                    <i class="ti-linkedin"></i>
                 </div>
-                <p class="body-footer__text">
-                    Powered by <a href="">w3.css</a>
-                </p>
+                <div class="body-img">
+                    <img src="./assets/hinhanh/map.jpg" alt="" class="body-img_img">
+                </div>
+                <div class="body-item ">
+                    <div class="body-footer">
+                        <a class="body-item__footer-link" href="">
+                            <i class="ti-facebook"></i></a>
+                        <a class="body-item__footer-link" href="">
+                            <i class="ti-instagram"></i></a>
+                        <a class="body-item__footer-link" href="">
+                            <i class="ti-twitter-alt"></i></a>
+                        <a class="body-item__footer-link" href="">
+                            <i class="ti-pinterest"></i></a>
+                        <a class="body-item__footer-link" href="">
+                            <i class="ti-linkedin"></i></a>
+                    </div>
+                    <p class="body-footer__text">
+                        Powered by <a href="">w3.css</a>
+                    </p>
+                </div>
             </div>
 
 
 
         </body>
-        <div class="modal">
+        <div class="modal js-modal ">
             <div class="modal-ticket">
-                <div class="modal-contain__tickets">
+                <div class="modal-contain__tickets js-modal-container">
                     <div class="modal-header">
                         <i class="modal-tickets_icon-close ti-close"></i>
                         <h3 class="modal-container__ticket-header">
@@ -254,6 +281,7 @@
 
 
                         <button class="modal-container__tickets-body-item-link-button">Pay
+                            <i class="ti-check"></i>
 
                         </button>
                         </a>
@@ -287,6 +315,114 @@
         </div>
         <footer class="footer"></footer>
     </div>
+
+    <script>
+        var header = document.getElementById("header");
+        var items = document.querySelectorAll(".header-item__navbar-link-item-mobile");
+        // lấy tất cả các phần tử có class là header-item__navbar-link-item
+        var mobileMenu = document.getElementById("mobile-menu");
+        // lấy header sử dụng javascript
+        // console.log(header);
+        // console.log(mobileMenu);
+        // in biến header ra console
+        var headerHeight = header.clientHeight;
+        // lấy chiều cao của header
+
+        // đóng mở mobile menu
+
+        mobileMenu.onclick = function () {
+            // console.log(header.clientHeight);
+            // xem chiều cao của header
+            var isClosed = header.clientHeight === headerHeight;
+            // gán giá trị của biến isOpen bằng chiều cao của header
+            // 3 dấu bằng có nghĩa là so sánh cả kiểu dữ liệu và giá trị
+            if (isClosed) {
+                items.forEach(li => li.style.display = 'block');
+                header.style.height = "auto";
+            }
+            else {
+                items.forEach(li => li.style.display = 'none');
+
+
+
+            }
+        }
+
+        // Tự động đóng mobile menu khi click vào các mục
+        var links = document.querySelectorAll(".header-item__navbar-link-item-a");
+        // lấy tất cả các phần tử có class là header-item__navbar-link-item-a
+        links.forEach(link => {
+            link.onclick = function () {
+                if (header.clientHeight > headerHeight) {
+                    header.style.height = "auto";
+                    items.forEach(li => li.style.display = 'none');
+
+                }
+            }
+        });
+
+
+        // cách 2
+        // var menuItems = document.querySelectorAll('.navbar li a[href*=#] ');
+        // for (var i = 0; i < menuItems.length; i++) {
+        //    var menuItem = menuItems[i];
+        //    menuItem.onclick = function(){
+        //         items.forEach(li => li.style.display = 'none'); }
+
+        // ẩn thuộc tính click làm vào ẩn menu của more
+
+        var moreLink = document.querySelector(".header-item__navbar-link-item-more");
+        var moreList = document.querySelector(".navbar-item__link-list");
+        moreLink.onclick = function () {
+            if (moreList.style.display === "none" || moreList.style.display === "") {
+                moreList.style.display = "block";
+                items.forEach(li => li.style.display = 'block');
+
+            }
+            else {
+                moreList.style.display = "none";
+            }
+
+        }
+
+
+
+
+
+    </script>
+    <script>
+        const buyBtns = document.querySelectorAll('.js-buy-ticket')
+        const modal = document.querySelector('.js-modal')
+        const close = document.querySelector('.modal-tickets_icon-close')
+        const modalContainer = document.querySelector('.js-modal-container')
+        //    hàm hiển thị modal mua vé (thêm class open vào modal)
+        function showBuyTickets() {
+            modal.classList.add('open')
+        }
+
+        // hàm đóng modal khi click vào dấu x (gỡ bỏ class open của modal)
+        function closeBuyTickets() {
+            modal.classList.remove('open')
+        }
+
+        // lặp qua từng thẻ button và nghe hành vi click
+        for (const buyBtn of buyBtns) {
+            buyBtn.addEventListener('click', showBuyTickets)
+        }
+
+        // nghe hành vi click vào close
+        close.addEventListener('click', closeBuyTickets)
+
+        modal.addEventListener('click', closeBuyTickets)
+
+        modalContainer.addEventListener('click',
+            function (event) {
+                // ngăn chặn sự kiện tắt khi click vào js-modal
+                event.stopImmediatePropagation()
+            }
+        )
+
+    </script>
 
 </body>
 

@@ -1,4 +1,4 @@
-.header {
+#header {
     background-color: var(--primary-color);
     position: fixed;
     top: 0;
@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    width: 100%
 }
 
 
@@ -19,19 +19,26 @@
     margin-left: 0;
 }
 
+
+
+
 .header-item__navbar-link-item-a {
     text-decoration: none;
     color: var(--white-color);
     font-size: 1.4rem;
+    display: inline-block;
+    padding: 15px 25px;
 
 }
+
+
+
 
 .header-item__navbar-icon-search {
     color: var(--white-color);
     font-size: 1.4rem;
-    padding: 0 20px;
     cursor: pointer;
-    padding: 14px 25px;
+    padding: 17px 25px;
 }
 
 .header-item__navbar-link {
@@ -40,17 +47,18 @@
     align-items: center;
 }
 
-.header-item__navbar-link-item {
-    padding: 12px 25px;
-}
 
 .header-item__navbar-link-item-a-icon {
     color: var(--white-color);
     padding-left: 6px;
+    position: absolute;
+    top: 12.5px;
+    right: 5px;
+    font-size: 1.4rem;
 
 }
 
-.header-item__navbar-link-item:hover {
+.header-item__navbar-link-item-a:hover {
     background-color: #9f9a9a66;
     transition: background-color ease-in 0.2s;
 }
@@ -66,15 +74,21 @@
     padding-left: 0;
     position: absolute;
     top: 100%;
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 2px 0 rgb(167, 165, 165);
     /* x, y, độ lơ(mờ), spread (lan rộng) */
     border-radius: 2px;
     display: none;
+
 
 }
 
 .header-item__navbar-link-item-more {
     position: relative;
+}
+
+.header-item__navbar-link-item-more:active .navbar-item__link-list {
+    display: block;
+
 }
 
 .header-item__navbar-link-item-more:hover .navbar-item__link-list {
@@ -113,30 +127,44 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; */
-    background: url('/assets/hinhanh/ny.jpg') top center /cover no-repeat;
+    background: url('../hinhanh/ny.jpg') top center /cover no-repeat;
 
 }
 
-.banner-img__text {
+
+
+.banner-text {
     position: absolute;
-    top: 80%;
+    bottom: 100px;
     color: white;
     font-size: 2rem;
     left: 0;
     right: 0;
     text-align: center;
     font-weight: 300;
-    background-color: rgba(0, 0, 0, 0.5);
+    /* background-color: rgba(0, 0, 0, 0.5); */
     padding: 20px 0 40px 0;
-
-
+    text-shadow: 0 0 1px #000;
+    /* chiều ngang - chiều dọc - l(mờ xung quanh) - màu */
 }
 
-.banner-img__text-description {
+.banner-text h2 {
+    margin-top: 17px
+}
+
+
+
+.banner-text p {
+    margin-top: 10px;
+    font-weight: 300;
+    font-size: 1.6rem;
+}
+
+/* .banner-img__text-description {
     position: absolute;
-    top: calc(80% + 30px);
-    /* 20px là khoảng cách từ top của banner-img__text */
-    color: rgb(226, 224, 224);
+    top: calc(80% + 30px); */
+/* 20px là khoảng cách từ top của banner-img__text */
+/* color: rgb(226, 224, 224);
     font-size: 1.6rem;
     line-height: 2rem;
     left: 0;
@@ -147,7 +175,7 @@
     padding: 20px 0;
     font-weight: 300;
 
-}
+} */
 
 
 
@@ -174,7 +202,7 @@
 /* img member */
 .body-item__member-img {
     padding-top: 100%;
-    background: url('/assets/hinhanh/bandmember.jpg') top center /cover no-repeat;
+    background: url('../hinhanh/bandmember.jpg') top center /cover no-repeat;
     border-radius: 5px;
     ;
 }
@@ -184,11 +212,16 @@
     justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 30px;
+    padding-bottom: 10px;
 }
 
 .body-item__member-name {
     margin-bottom: 5px;
     font-size: 1.2rem;
+    padding: 10px 0;
+    font-size: 1.4rem;
+    font-weight: 600;
+
 
 }
 
@@ -202,6 +235,7 @@
 .body-item__tour {
     background-color: var(--primary-color);
     padding: 0.1px 0 30px 0;
+
 }
 
 .body-item__tour-background {
@@ -240,7 +274,7 @@
     font-size: 1.6rem;
     display: flex;
     align-items: center;
-    width: 100px
+    width: 120px
 }
 
 .body-item__tour-date-label {
@@ -269,15 +303,23 @@
 }
 
 .body-item__tour-box-item-img {
-    width: 240px;
+    width: 100%;
     height: 200px;
+}
+
+.body-item__tour-box-item-img:hover {
+    opacity: 0.8;
 }
 
 .body-item__tour-box-item {
     background-color: white;
-    width: 240px;
+    width: 230px;
     text-align: left;
     margin-bottom: 20px;
+    border-radius: 4px;
+    overflow: hidden;
+
+
 }
 
 .body-item__tour-box {
@@ -346,10 +388,14 @@
 
 .body-contact__detail-input-1 {
     display: flex;
+    justify-content: space-between;
+
+
 }
 
 .body-contact__detail-input {
     text-align: left;
+    width: 100%;
 }
 
 .body-contact__container {
@@ -365,16 +411,18 @@
 }
 
 .body-contact__detail-icon-2 {
-    position: absolute;
-    top: 10px;
-    left: -20px;
-    font-size: 1.5rem;
+    width: 20px;
+    text-align: left;
+    display: inline-block;
 }
 
 .body-contact__detail-input-general {
+
     padding: 10px;
     border: 1px solid #cccc;
+    width: 50%;
 }
+
 
 .body-contact__detail-input-message {
     margin-top: 10px;
@@ -383,6 +431,7 @@
 
 .body-contact__detail-input-email {
     margin-left: 10px;
+
 }
 
 .body-contact__detail-input {
@@ -400,8 +449,11 @@
 
 .body-contact__button-link {
     display: block;
-    float: right;
+    display: flex;
+    justify-content: flex-end;
     text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .body-contact__button:hover {
@@ -434,4 +486,29 @@
 .body-footer {
     color: #757575;
     font-size: 2.4rem;
+}
+
+.body-footer a {
+    text-decoration: none;
+    color: #757575;
+    width: 10px;
+
+}
+
+.body-item__footer-link:hover {
+    opacity: 0.8;
+}
+
+.body-band {
+    padding-top: 10px;
+
+}
+
+.body-contact {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.body-contact__detail-place a {
+    padding-left: 10px
 }
